@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="dtDocTitle">Debt Tracker | Developer Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <div id="navPlaceholder"></div>
+
+  <div class="container">
+
+    <div class="app-detail-hero animate-in">
+      <div class="app-icon">📱</div>
+      <div class="app-detail-info">
+        <h2 id="app1Title">Debt Tracker</h2>
+        <div class="app-detail-meta">
+          <span class="version-badge">v1.0.0</span>
+          <span class="category-tag" id="tagFinance">Finance</span>
+          <span class="trial-badge" id="trialBadge">Free Trial</span>
+        </div>
+        <p id="app1Desc">Debt management app with offline SQLite and cloud sync. Track debts locally with automatic backup across devices.</p>
+      </div>
+    </div>
+
+    <div class="trial-highlight animate-in">
+      <span>🎉</span> <span id="trialHighlightText">2 Weeks Free Trial — No credit card required</span>
+    </div>
+
+    <div class="detail-section animate-in">
+      <h3 id="featuresTitle">Features</h3>
+      <ul class="feature-list" id="dtFeatures">
+        <li data-i18n="dtFeat1">Track debts owed to you and debts you owe</li>
+        <li data-i18n="dtFeat2">Add, edit, and delete debt entries</li>
+        <li data-i18n="dtFeat3">Mark debts as paid or partially paid</li>
+        <li data-i18n="dtFeat4">Set due dates and receive reminders</li>
+        <li data-i18n="dtFeat5">Works fully offline with local SQLite storage</li>
+        <li data-i18n="dtFeat6">Cloud sync keeps your data backed up across devices</li>
+        <li data-i18n="dtFeat7">Search and filter debt entries</li>
+        <li data-i18n="dtFeat8">Dark and light theme support</li>
+      </ul>
+    </div>
+
+    <div class="detail-section animate-in">
+      <h3 id="screenshotsTitle">Screenshots</h3>
+      <div class="screenshot-gallery" id="screenshotGallery">
+        <div class="screenshot-item">
+          <img src="../images/screenshot-1.png" alt="Debt Tracker - Main Screen" onerror="this.parentElement.style.display='none'" />
+        </div>
+        <div class="screenshot-item">
+          <img src="../images/screenshot-2.png" alt="Debt Tracker - Add Debt" onerror="this.parentElement.style.display='none'" />
+        </div>
+        <div class="screenshot-item">
+          <img src="../images/screenshot-3.png" alt="Debt Tracker - Dashboard" onerror="this.parentElement.style.display='none'" />
+        </div>
+      </div>
+      <div class="screenshot-placeholder" id="screenshotsPlaceholder">Screenshots coming soon — add your images to the images/ folder</div>
+    </div>
+
+    <div class="detail-section animate-in">
+      <h3 id="requirementsTitle">System Requirements</h3>
+      <ul class="requirements-list" id="dtRequirements">
+        <li data-i18n="dtReq1">Android 5.0+</li>
+        <li data-i18n="dtReq2">50 MB Storage</li>
+        <li data-i18n="dtReq3">Internet required for cloud sync</li>
+      </ul>
+    </div>
+
+    <div class="detail-section animate-in">
+      <h3 id="changelogTitle">Changelog</h3>
+      <div class="changelog-item">
+        <h4>v1.0.0</h4>
+        <div class="changelog-date" data-i18n="dtCl1Date">January 2026</div>
+        <ul>
+          <li data-i18n="dtCl1Item1">Initial release</li>
+          <li data-i18n="dtCl1Item2">Core debt tracking features</li>
+          <li data-i18n="dtCl1Item3">SQLite local storage</li>
+          <li data-i18n="dtCl1Item4">Dark/light theme</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-detail-actions animate-in">
+      <a href="#" class="btn btn-download" id="app1Btn">
+        <span>⚡</span> <span class="btn-text">Download APK</span>
+        <span class="arch-badge" id="detectedArch"></span>
+        <span class="file-size" id="fileSize">Loading size...</span>
+      </a>
+      <a href="../index.html" class="btn btn-outline" id="viewAllAppsBtn">View All Apps</a>
+    </div>
+
+    <footer>
+      <p id="footerText">© 2026 Developer Showcase. Built for direct APK distribution.</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">
+    <span>✅</span> <span id="toastText">Download started!</span>
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

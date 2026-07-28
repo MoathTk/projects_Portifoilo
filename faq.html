@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ | Developer Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navPlaceholder"></div>
+
+  <div class="container">
+
+    <div class="page-header animate-in">
+      <h1>FAQ & Install Guide</h1>
+    </div>
+
+    <!-- Installing APK Files -->
+    <div class="faq-category animate-in">
+      <h3 id="faqInstallTitle">Installing APK Files</h3>
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)" data-q="faqQ1">
+            <span class="accordion-text">How do I install an APK file on my Android device?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content" data-faq="faqA1">
+              <p>Follow these steps to install an APK file:</p>
+              <ol>
+                <li>Download the APK file by tapping the download button.</li>
+                <li>Open your device's file manager and navigate to the Downloads folder.</li>
+                <li>Tap the APK file to begin installation.</li>
+                <li>If prompted, allow installation from unknown sources.</li>
+                <li>Wait for the installation to complete and tap Done or Open.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)" data-q="faqQ4">
+            <span class="accordion-text">How do I enable 'Install from Unknown Sources'?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content" data-faq="faqA4">
+              <p>The exact steps vary by Android version:</p>
+              <ol>
+                <li>Go to Settings &gt; Security (or Apps &amp; Notifications).</li>
+                <li>Find 'Install unknown apps' or 'Unknown sources'.</li>
+                <li>Select the file manager or browser you're using.</li>
+                <li>Toggle 'Allow from this source' to on.</li>
+              </ol>
+              <p>On Android 8.0+, permissions are granted per-app rather than globally.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Safety & Distribution -->
+    <div class="faq-category animate-in">
+      <h3 id="faqSafeTitle">Is It Safe?</h3>
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)" data-q="faqQ2">
+            <span class="accordion-text">Are these APK files safe to install?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content" data-faq="faqA2">
+              <p>Yes. All APK files are built by us, signed with our developer certificate, and have been tested for security. We do not modify or tamper with any third-party code. You can verify the APK signature before installing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)" data-q="faqQ3">
+            <span class="accordion-text">Why aren't these apps on the Google Play Store?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content" data-faq="faqA3">
+              <p>These apps are either in active development, designed for specific use cases, or distributed directly to provide faster updates without Play Store review delays. We may publish to the Play Store in the future.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Updates & Usage -->
+    <div class="faq-category animate-in">
+      <h3 id="faqUpdateTitle">How to Update</h3>
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)" data-q="faqQ5">
+            <span class="accordion-text">How do I update an app to a newer version?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content" data-faq="faqA5">
+              <p>Simply download the latest APK and install it over the existing version. Your data will be preserved. You do not need to uninstall the old version first.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)" data-q="faqQ6">
+            <span class="accordion-text">Do these apps work offline?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-content" data-faq="faqA6">
+              <p>Yes. Debt Tracker works with local SQLite storage and syncs your data to the cloud automatically. You can access your debts offline, and changes will be synced across your devices when you're back online.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <p id="footerText">© 2026 Developer Showcase. Built for direct APK distribution.</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
