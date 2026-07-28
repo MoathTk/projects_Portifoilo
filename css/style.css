@@ -1398,6 +1398,10 @@ footer {
     flex-direction: column;
   }
 
+  .card-actions {
+    flex-direction: column;
+  }
+
   .contact-methods {
     grid-template-columns: 1fr;
   }
